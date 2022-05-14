@@ -63,6 +63,7 @@ span{
 }
 .home-responsive{
     width: 100%;
+    size:auto;
     height:auto;
 }
 
