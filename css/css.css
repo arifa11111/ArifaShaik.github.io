@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+html{
+    scroll-behavior:smooth;
+  }
+
+section{
+    height: 600px;
+    position: relative;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    height: 60px;
+    align-items: center;
+    box-shadow: 2px 2px 12px rgb(230, 210, 235);
+    position: sticky;
+    left:0;
+    top:0;
+    z-index:1;
+    background-color: rgb(215, 144, 233);
+    opacity: 0.7;
+    
+}
+.logo{
+    color:white;
+    padding: 0% 3%;
+    width: 5%;
+    font-style: italic;
+    font-size: 300%;
+}
+.navbar ul{
+    display: flex;
+    list-style:none;
+}
+.navbar ul li a{
+    padding:3px 10px;
+    text-decoration: none;
+    color:black;
+    font-family:calibri;
+    font-size: 17px;
+}
+.navbar ul li a:hover{
+    border-bottom: 2px solid white;
+    color: rgb(32, 32, 31);
+}
+
+.navbar ul li a:active{
+    color:yellow;
+}
+section #home{
+    background: url('imges/bg3.jpeg') no-repeat center center/cover;
+}
+
+/* text in home */
+span{
+    color: rgb(245, 68, 45);
+}
+.home-responsive{
+    width: 100%;
+    height:auto;
+}
+
+.text p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    color:#6d6d6d;
+    font-size: 20px;    
+}
+.text p:nth-child(2){
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:rgb(215, 144, 233);
+    font-size: 50px;
+}
+
+.text p:nth-child(3){
+    font-family: myriad pro regular;
+    color: #403e3e;
+    font-size: 20px;
+}
+
+.text p{
+    line-height: 2px;
+    margin: 45px 0px 25px;
+    color: black;
+}
+
+.text{
+    position: absolute;
+    left: 13%;
+    top:42%;
+    transform: translate(-13%,-42%);
+}
+
+.model{
+    height: 300px;
+    position: absolute;
+    bottom: 5px;
+    top:25%;
+    left:80%;
+    transform: translateX(-70%);
+}
+
+.about{
+    width:80%;
+    height: 330px;
+    transform: translate(0,44%);
+    background-color: rgb(215, 144, 233);
+    border-radius:20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin:-7% auto 20px auto;
+}
+.about img{
+    height: 330px;
+    padding: 0% 2%;
+}
+.about-text{
+    width: 550px; 
+    text-decoration: none;
+}
+.about-text p:nth-child(1){
+    color:white;
+    font-family: myriad pro;
+    font-weight:bold;
+    font-size:23px;
+    transform: translate(50%,50%);
+    line-height: 40px;
+}
+.about-text p:nth-child(2){
+    color:white;
+    font-size: 13px;
+    font-family: myriad pro;
+    font-weight: bold;
+    line-height: 40px;
+}
+.about-text p:nth-child(3){
+    color:white;
+    font-family: calibri;
+    font-size:16px;
+}
+.contact{
+    width:80%;
+    height: 330px;
+    display: flex;
+    transform: translate(0,44%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    background-color: rgb(215, 144, 233);
+    border-radius:20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin:-7% auto 20px auto;
+    }
+
+.contact p{
+    color: white;
+    font-size: 30px;
+    font-family: calibri;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    line-height: 100px;
+}
+.social-media a{
+    width:30px;
+    height:60px;
+    display:flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    transform: translate(-30% ,0%);
+    line-height: 100px;
+}
+
+.social-media{
+    display: flex;
+}
+
+
+/*..........gallary...............*/
+/* portfolio section */
+#gal{
+    display: flex;
+    flex-direction: column;
+    
+}
+#gal h1{
+    margin:60px;
+    color: rgb(215, 144, 233);
+}
+.gallary{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallary img{
+    width: 360px;
+    height: 360px;
+    padding: 5px;
+    margin:10px;
+}
+
+.gallary img:hover{
+    background-color: rgb(215, 144, 233);
+    cursor: pointer;
+}
+.heading{
+    color:rgb(215, 144, 233);
+    font-size:3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+#portfolio h1{
+    color: rgb(215, 144, 233);
+    align-content: center;
+}
+
+
+/*@media(max-width:1100px){
+    nav{
+        justify-content: space-between;
+        height: 65px;
+    }
+    .menu{
+        display: none;
+    }
+    nav .menu-icon{
+        cursor: pointer;
+        float:right;
+        padding: 28px 28px;
+        position: relative;
+        user-select: none;
+    }
+    nav .menu-icon .nav-icon{
+        background-color: #333333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        width: 18px;
+    }
+    nav .menu-icon .nav-icon:before,
+    nav .menu-icon .nav-icon:after{
+        background: black;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all ease-out 0.2s;
+        width:100%;
+    }
+    nav .menu-icon .nav-icon:before{
+        top:5px;
+    }
+    nav .menu-icon .nav-icon:after{
+        top:-5px'
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
